@@ -7,7 +7,7 @@ describe('testMe functionality',()=>{
     });
 
     it('returns "<word> is the word."',()=>{
-        expect(testMe('bird')).toBe('byrd is the word.');
+        expect(testMe('bird')).toBe('bird is the word.');
     });
 });
 
