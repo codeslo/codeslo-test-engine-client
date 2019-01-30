@@ -1,21 +1,16 @@
 const Jasmine = require('jasmine');
 const jasmine = new Jasmine();
+const testMe = require('./challenges/Week-01/Day-01/testMe');
 
-// can we negate the need for this by keeping everything in the same file?
 jasmine.loadConfigFile('spec/support/jasmine.json');
 
 jasmine.onComplete(function(passed){
     if(passed){
-        console.log('yay');
+        let code = ""+testMe;
+        console.log(code);
     }else{
         console.log('aw');
     }
 });
 
 jasmine.execute();
-
-// user function
-
-// jasmine tests
-
-// Jasmine config files that will be the same for all tests. Can be imported or copy/pasted
