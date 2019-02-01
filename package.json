@@ -13,5 +13,9 @@
   "devDependencies": {
     "jasmine": "^3.3.1",
     "jasmine-console-reporter": "^3.1.0"
+  },
+  "dependencies": {
+    "app-root-path": "^2.1.0",
+    "glob": "^7.1.3"
   }
 }
