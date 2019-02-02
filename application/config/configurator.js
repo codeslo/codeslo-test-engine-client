@@ -3,8 +3,11 @@ function config() {
     const jasmine = new Jasmine();
     const glob = require('glob');
     const path = require('path');
+    const callsite = require('callsite');
     const root = require('app-root-path');
     const Reporter = require('jasmine-console-reporter');
+    const stack = callsite();
+    let requester = stack[1].getFileName();
     let user = require(root+'/user_settings/config');
     let studentCode = "";
     glob('./*.challenge.js',(options,result)=>{
@@ -39,10 +42,10 @@ function config() {
         }
     });
     
-    console.log(__dirname);
-    if(__dirname.includes('challenges')){
-        return console.log('You\'re in the challenges directory, please copy-paste your code to my_solutions');
+    if(path.dirname(requester).includes('challenges')){
+        return console.log('You\'re in the challenges directory. Please copy-paste your code into my_solutions. Code on!');
     }
+    
     return jasmine.execute();
 }
 
