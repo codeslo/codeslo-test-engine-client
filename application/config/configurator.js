@@ -38,6 +38,9 @@ function config() {
             console.log('Tenacity is talent! Try again.');
         }
     });
+    if(__dirname.includes('challenges')){
+        return console.log('You\'re in the challenges directory, please copy-paste your code to my_solutions');
+    }
     return jasmine.execute();
 }
 
