@@ -3,8 +3,9 @@ function config() {
     const jasmine = new Jasmine();
     const glob = require('glob');
     const path = require('path');
+    const root = require('app-root-path');
     const Reporter = require('jasmine-console-reporter');
-    let user = require('../user_settings/config');
+    let user = require(root+'/user_settings/config');
     let studentCode = "";
     glob('./*.challenge.js',(options,result)=>{
         studentCode = require(path.resolve(result[0]));
