@@ -1,8 +1,0 @@
-{
-  "spec_dir": "spec",
-  "spec_files": [
-    "./Week-01/Day-01/testMe.spec.js"
-  ],
-  "stopSpecOnExpectationFailure": false,
-  "random": true
-}
