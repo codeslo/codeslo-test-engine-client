@@ -26,12 +26,14 @@ function config() {
     jasmine.jasmine.getEnv().addReporter(new Reporter());
 
     jasmine.onComplete(function (passed) {
+        // TODO - add exercise name from code
         if (passed) {
             let codeString = "" + studentCode;
             let package = {
                 firstName: user.firstName,
                 lastName: user.lastName,
                 password: user.password,
+                exercise: 'TODO Exercise',
                 code: codeString,
                 pass: passed
             }
