@@ -6,6 +6,7 @@ function config() {
     const callsite = require('callsite');
     const root = require('app-root-path');
     const Reporter = require('jasmine-console-reporter');
+    const axios = require('axios');
     const stack = callsite();
     let requester = stack[1].getFileName();
     let user = require(root+'/user_settings/config');
@@ -29,15 +30,16 @@ function config() {
         // TODO - add exercise name from code
         if (passed) {
             let codeString = "" + studentCode;
-            let package = {
+            axios.post('http://localhost:3000/test-results',{
                 firstName: user.firstName,
                 lastName: user.lastName,
                 password: user.password,
                 exercise: 'TODO Exercise',
                 code: codeString,
-                pass: passed
-            }
-            console.log(package);
+                passed: passed
+            }).then((response)=>{
+                console.log(response.data);
+            });
 
         } else {
             console.log('Tenacity is talent! Try again.');
