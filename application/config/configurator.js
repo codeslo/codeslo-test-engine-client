@@ -8,6 +8,7 @@ function config() {
     const Reporter = require('jasmine-console-reporter');
     const axios = require('axios');
     const stack = callsite();
+    const chalk = require('chalk');
     let requester = stack[1].getFileName();
     let user = require(root+'/user_settings/config');
     let studentCode = "";
@@ -34,20 +35,22 @@ function config() {
                 firstName: user.firstName,
                 lastName: user.lastName,
                 password: user.password,
-                exercise: 'TODO Exercise',
+                testName: 'TODO Exercise 2',
                 code: codeString,
                 passed: passed
             }).then((response)=>{
-                console.log(response.data);
+                console.log(chalk.green('Submission successful. ' + (response.data ? chalk.cyan(response.data) :'')));
+            }).catch((err)=>{
+                console.log(chalk.red('Submission failed. ') + 'Error code: '+chalk.yellow(err.response.status)+' '+chalk.cyan(err.response.data));
             });
 
         } else {
-            console.log('Tenacity is talent! Try again.');
+            console.log(chalk.yellow('Tenacity is talent! Try again.'));
         }
     });
     
     if(path.dirname(requester).includes('challenges')){
-        return console.log('You\'re in the challenges directory. Please copy-paste your code into my_solutions. Code on!');
+        return console.log(chalk.red('You\'re in the challenges directory. Please copy-paste your code into my_solutions. Code on!'));
     }
     
     return jasmine.execute();
