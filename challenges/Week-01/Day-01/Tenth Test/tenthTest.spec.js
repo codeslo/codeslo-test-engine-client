@@ -6,7 +6,7 @@ describe('tenthTest functionality',()=>{
         expect(typeof(tenthTest)).toBe('function');
     });
 
-    it('returns "<word> is the word."',()=>{
+    it('returns tenth',()=>{
         expect(tenthTest()).toBe('tenth');
     });
 });
