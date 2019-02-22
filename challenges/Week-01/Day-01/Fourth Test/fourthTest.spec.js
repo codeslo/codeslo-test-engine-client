@@ -1,4 +1,4 @@
-const fourth = require('./fourthTest.challenge');
+const fourthTest = require('./fourthTest.challenge');
 
 describe('Fourth Test functionality',()=>{
 
@@ -6,7 +6,7 @@ describe('Fourth Test functionality',()=>{
         expect(typeof(fourthTest)).toBe('function');
     });
 
-    it('returns "<word> is the word."',()=>{
+    it('returns fourth',()=>{
         expect(fourthTest()).toBe('fourth');
     });
 });

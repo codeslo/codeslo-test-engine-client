@@ -1,13 +1,13 @@
-const testMe = require('./firstTest.challenge');
+const fifthTest = require('./fifthTest.challenge');
 
-describe('testMe functionality',()=>{
+describe('Fifth Challenge functionality',()=>{
 
     it('is a function',()=>{
-        expect(typeof(testMe)).toBe('function');
+        expect(typeof(fifthTest)).toBe('function');
     });
 
-    it('returns "<word> is the word."',()=>{
-        expect(testMe('bird')).toBe('bird is the word.');
+    it('returns fifth',()=>{
+        expect(fifthTest()).toBe('fifth');
     });
 });
 

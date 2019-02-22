@@ -1,5 +1,5 @@
-function testMe(word){
-    return `${word} is the word.`;
+function firstTest(){
+    return 'first';
 }
 
-module.exports = testMe;
+module.exports = firstTest;

@@ -6,7 +6,7 @@ describe('Third Test functionality',()=>{
         expect(typeof(thirdTest)).toBe('function');
     });
 
-    it('returns "<word> is the word."',()=>{
+    it('returns third',()=>{
         expect(thirdTest()).toBe('third');
     });
 });
