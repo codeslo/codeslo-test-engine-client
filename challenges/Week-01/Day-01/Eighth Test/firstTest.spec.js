@@ -1,4 +1,4 @@
-const testMe = require('./testMe.challenge');
+const testMe = require('./firstTest.challenge');
 
 describe('testMe functionality',()=>{
 
