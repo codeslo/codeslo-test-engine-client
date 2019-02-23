@@ -40,18 +40,18 @@ function config(testName) {
             passed: passed
         }).then((response) => {
             console.log(chalk.green('Submission successful. ' + (response.data ? chalk.cyan(response.data) : '')));
+            if (passed) {
+                console.log(chalk.green('Good work! On to the next challenge.'));
+                process.exit();
+            }
+            else {
+                console.log(chalk.yellow('Tenacity is talent! Try again.'));
+                process.exit();
+            }
         }).catch((err) => {
             console.log(chalk.red('Submission failed. ') + 'Error code: ' + chalk.yellow(err.response.status) + ' ' + chalk.cyan(err.response.data));
         });
 
-        if (passed) {
-            console.log(chalk.green('Good work! On to the next challenge.'));
-            process.exit();
-        }
-        else {
-            console.log(chalk.yellow('Tenacity is talent! Try again.'));
-            process.exit();
-        }
     });
 
     if (path.dirname(requester).includes('challenges')) {
