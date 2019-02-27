@@ -39,7 +39,7 @@ function config(testName) {
             code: codeString,
             passed: passed
         }).then((response) => {
-            console.log(chalk.green('Submission successful. ' + (response.data ? chalk.cyan(response.data) : '')));
+            console.log(chalk.green('Submission complete. ' + (response.data ? chalk.cyan(response.data) : '')));
             if (passed) {
                 console.log(chalk.green('Good work! On to the next challenge.'));
                 process.exit();

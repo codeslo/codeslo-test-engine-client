@@ -1,5 +1,5 @@
 // enter test name here. Be sure it matches a test name in the database. Add tests via the web interface /addtest
-const testName = "Seventh Test";
+const testName = "create_a_function";
 // do not change code below this line
 const root = require('app-root-path');
 const configRunner = require(root + '/application/config/configurator');

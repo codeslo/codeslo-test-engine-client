@@ -1,5 +1,5 @@
 let settings = {
-    firstName:"Matt",
+    firstName:"Lynne",
     lastName:"West",
     password:"123"
 }
