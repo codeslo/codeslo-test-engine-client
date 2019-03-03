@@ -15,6 +15,14 @@ This is regular text
 
 **This is bold**
 
+>  Multiline blockquote for great justice. Notice there are two spaces after the angle bracket.
+This will extend the quote highlighting to multiple lines. Enter twice to exit.
+
+
+
+This is no longer part of the block quote.
+
+
 It is possible to include code examples.
 
 ```javascript
