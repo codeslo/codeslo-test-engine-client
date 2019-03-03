@@ -6,7 +6,7 @@ describe('addFive tests',()=>{
     });
 
     it('returns five plus the number passed to it',()=>{
-        expect(func(5).toEqual(10));
+        expect(func(5)).toEqual(10);
     });
 });
 

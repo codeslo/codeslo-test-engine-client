@@ -31,7 +31,7 @@ function config(testName) {
         // TODO - add exercise name from code
 
         let codeString = "" + studentCode;
-        axios.post('http://localhost:3000/test-results', {
+        axios.post('http://codeslo-test-engine.herokuapp.com/test-results', {
             firstName: user.firstName,
             lastName: user.lastName,
             password: user.password,
