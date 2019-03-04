@@ -1,5 +1,3 @@
-##Welcome to the CodeSLO Test Engine
-
 ####Introductory Challenges
 
 The purpose of the introductory challenges is to help you get comfortable with the CodeSLO Test Engine and to make sure you understand foundational JavaScript concepts.
