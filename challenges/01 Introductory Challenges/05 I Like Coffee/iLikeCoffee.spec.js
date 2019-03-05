@@ -2,7 +2,7 @@ const func = require('./iLikeCoffee.challenge');
 
 describe('I Like Coffee requirements',()=>{
     
-    it('returns a value equal to five plus the parameter passed to it',()=>{
+    it('returns the expected phrase depending on the parameter',()=>{
         let test1 = func('coffee');
         let test2 = func('tea');
         let test3 = func('coke');
