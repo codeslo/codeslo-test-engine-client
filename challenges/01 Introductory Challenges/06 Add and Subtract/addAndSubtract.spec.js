@@ -8,6 +8,6 @@ describe('Add and Subtract requirements',()=>{
         let test3 = func(200,100,500);
         expect(test1).toBe(0);
         expect(test2).toBe(10);
-        expect(test3).toBe(-300);
+        expect(test3).toBe(-200);
     });
 });
