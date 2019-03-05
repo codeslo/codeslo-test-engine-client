@@ -1,6 +1,6 @@
 const func = require('./findPizza.challenge');
 
-describe('Search Me requirements',()=>{
+describe('Find Pizza requirements',()=>{
     it('returns true if the array passed to it contains "pizza"',()=>{
         expect(func(['corn','tacos','pizza','apples'])).toBe(true);
     });
