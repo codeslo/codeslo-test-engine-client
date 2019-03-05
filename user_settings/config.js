@@ -1,7 +1,7 @@
 let settings = {
-    firstName:"Lynne",
-    lastName:"West",
-    password:"123"
+    firstName:"Your first name here",
+    lastName:"Your last name here",
+    password:"A simple password you don't use anywhere else"
 }
 
 module.exports = settings;
