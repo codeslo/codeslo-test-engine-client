@@ -17,4 +17,4 @@ codersFirst(["Doctors","Lawyers","Bankers"]); // should return ["Coders","Doctor
 * The array that is returned should contain the elements of the array parameter with "Coders" moved to the front of the array.
 
 #### Bonus Challenge
-* Try to do the same challenge, but without using the built-in `Array.unshift()` method.
+* Try to do the same challenge, but without using the built-in `Array.unshift()` and `Array.splice()` methods.
