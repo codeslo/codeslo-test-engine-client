@@ -1,24 +1,24 @@
 const func = require('./hideAndSeek.challenge');
 
-describe('Hide and Seek should',()=>{
-    // TODO after testing git commit/push
-    // const result1 = func([1,2,3,4]);
-    // const result2 = func([1,2,3,5,7,8]);
-    // const result3 = func([1,2,3,5,9]);
-    // it('returns an array',()=>{
-    //     expect(Array.isArray(result1)).toBe(true);
-    // });
+describe('Hide And Seek should',()=>{
 
-    // it('returns the first two even numbers from array [1,2,3,4]',()=>{
-    //     expect(result1).toEqual([2,4]);
-    // });
+    const result1 = func([1, 2, 3], 3);
+    const result2 = func(['fun', 'happy things', 'kittens'], 'sad things');
+    const result3 = func([5, 10, 15], '10');
+    it('return a boolean',()=>{
+        expect(typeof(result1)).toBe("boolean");
+    });
 
-    // it('returns the first two even numbers from array [1,2,3,5,7,8]',()=>{
-    //     expect(result2).toEqual([2,8]);
-    // });
+    it('return true when the value is found in the array',()=>{
+        expect(result1).toBe(true);
+    });
 
-    // it('returns -1 if the parameter array does not contain two even numbers',()=>{
-    //     expect(result3).toBe(-1);
-    // });
+    it('return false when the value is NOT found in the array',()=>{
+        expect(result2).toBe(false);
+    });
+
+    it('return false if the value is only "loosely" equal to an element in the array',()=>{
+        expect(result3).toBe(false);
+    });
 
 });

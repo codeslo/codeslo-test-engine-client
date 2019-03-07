@@ -4,4 +4,4 @@
 
 
 // do not change code below this comment
-module.exports = hideAndSeek;
+module.exports = firstJenny;
