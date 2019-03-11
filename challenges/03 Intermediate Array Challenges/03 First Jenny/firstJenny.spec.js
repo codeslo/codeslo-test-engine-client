@@ -23,7 +23,7 @@ describe('First Jenny should',()=>{
     });
     
     it('return a proper value if the "starting index" is outside the limits of the array',()=>{
-        expect(result5).toBe(2);
+        expect(result5).toBe(-1);
         expect(result6).toBe(-1);
     });
 
