@@ -22,8 +22,8 @@ describe('First Jenny should',()=>{
         expect(result4).toBe(-1);
     });
     
-    it('return a proper value if the "starting index" is outside the limits of the array',()=>{
-        expect(result5).toBe(-1);
+    it('searches the entire array if start index is greater than the array length',()=>{
+        expect(result5).toBe(2);
         expect(result6).toBe(-1);
     });
 
