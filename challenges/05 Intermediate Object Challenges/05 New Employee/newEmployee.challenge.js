@@ -2,4 +2,4 @@
 
 
 
-module.exports = newEmployee;
+module.exports = Employee;
