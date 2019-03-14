@@ -1,6 +1,6 @@
 const func = require('./carmenSandiego.challenge');
 
-describe('Steamroller requirements', () => {
+describe('SCarmed Sandiego requirements', () => {
     let obj1 = {
         country_01:{
             country:'Chile',
