@@ -1,5 +1,5 @@
 ## New Employee
-Create an object constructor called **Employee**. **Employee** should accept an array as a parameter in the format below. The employee data in the array should be used by the constructor to create an object with the following properties: firstName, lastName, department, and jobTitle.
+Create an object constructor called **Employee**. **Employee** should accept an array as a parameter in the format below. The employee data in the array should be used by the constructor to create an object with the following properties: FirstName, LastName, Department, and JobTitle.
 
 *Array Format*
 ```javascript
