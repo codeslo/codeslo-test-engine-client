@@ -2,6 +2,8 @@
 Create a function, **steamroller**, that accepts an array as a parameter. This array will be multidimensional, with an unknown number of arrays inside it. 
 **steamroller** should return a single-dimensional array that contains all the values from the parameter array. 
 
+Your solution should *not* use JavaScripts built-in Array.flat method.
+
 ```javascript
 // Input example
 [['apples','peaches'],['broccoli','spinach'],['cheese','yogurt']];
