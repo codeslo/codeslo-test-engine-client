@@ -4,6 +4,8 @@ Create a function called **processVideos** that accepts JSON data and returns an
 
 In order to solve this challenge, you will need to do a little research on how to embed YouTube videos using iframes. Take a look at a YouTube video like this one: https://www.youtube.com/watch?v=0LHxvxdRnYc. Click "share" and then "embed" to see a properly formatted iframe. 
 
+Your solution should *not* use the built-in Array.flat method. 
+
 ```javascript
 // JSON example
 {  
