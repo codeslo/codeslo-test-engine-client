@@ -23,9 +23,9 @@ describe('Video Playlist requirements', () => {
 
     it('includes the correct output',()=>{
         let result = func();
-        expect(result.includes('<iframe width="1280"height="720" src="https://www.youtube.com/embed/sdbHXKlpPAM"?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')).toBe(true);
+        expect(result.includes('<iframe width="1280"height="720" src="https://www.youtube.com/embed/sdbHXKlpPAM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')).toBe(true);
 
-        expect(result.includes('<iframe width="1280"height="720" src="https://www.youtube.com/embed/8bYBOVWLNIs"?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>',)).toBe(true);
+        expect(result.includes('<iframe width="1280"height="720" src="https://www.youtube.com/embed/8bYBOVWLNIs?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>',)).toBe(true);
     });
 
 });

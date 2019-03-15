@@ -346,4 +346,4 @@ let JSON = {
 
 
 // do not change code below this comment
-module.exports = videoPlaylist;
+module.exports = buildPlaylist;
