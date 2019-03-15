@@ -50,6 +50,7 @@ function config(testName) {
             }
         }).catch((err) => {
             console.log(chalk.red('Submission failed. ') + 'Error code: ' + chalk.yellow(err.response.status) + ' ' + chalk.cyan(err.response.data));
+            process.exit();
         });
 
     });
