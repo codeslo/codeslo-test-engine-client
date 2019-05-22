@@ -1,15 +1,13 @@
-## Introductory Challenges
-
-The purpose of the introductory challenges is to help you get comfortable with the CodeSLO Test Engine and to make sure you understand foundational JavaScript concepts.
-
-Completeing these tests will help you be successful with more difficult coding challenges to come.
+## How to Use the CodeSLO Test Engine Client
 
 #### Getting Started
 1. Create a new folder in the root of test client directory. This folder *must* be named **my_solutions**.
 2. Copy the folders inside the **challenges** directory and paste them into your **my_solutions** directory.
 3. Create another folder in the root of the test client directory. This folder *must* be named **user_settings**.
-4. In user_settings, create a file called **config.js**. Copy/paste the config file contents at the bottom of this file, and fill in the correct information for firstName, lastName, and password. This information *must* match the information you registered with on the test-engine web app (http://codeslo-test-engine.herokuapp.com).
-3. Solve and run your challenges from your **my_solutions** folder. Trying to run challenges inside the **challenges** folder will generate an error.
+4. In user_settings, create a file called **config.js**.
+5. Find and copy the code in the **ConfigSample.js** file and paste into your user_settings/config.js file, and fill in the correct information for firstName, lastName, and password. This information *must* match the information you registered with on the test-engine web app (http://codeslo-test-engine.herokuapp.com).
+**note**: Your password is being stored in plain text in this file. Please use a simple password that you do *not* use anywhere else.
+5. Solve and run your challenges from your **my_solutions** folder. Trying to run challenges inside the **challenges** folder will generate an error.
 
 #### How to Solve the Challenges
 1. Each coding challenge comes in it's own folder. *Example: Create A Function*
