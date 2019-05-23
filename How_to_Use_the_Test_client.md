@@ -11,7 +11,7 @@
 
 #### How to Solve the Challenges
 1. Each coding challenge comes in it's own folder. *Example: Create A Function*
-2. Each folder contains several files but you're only interested in two. The **.challenge.js** file and the **readme.md** file. **Readme.md** contains instructions for the test. **.challenge.js** is where you will attempt to solve the challenge.
+2. Each folder contains several files but you're only interested in two. The **.challenge.js** file and the **readme<span>.md</span>** file. **Readme<span>.md</span>** contains instructions for the test. **.challenge.js** is where you will attempt to solve the challenge.
 3. When you're ready to solve the challenge, edit the **.challenge.js** file in order to return the correct values. You can run this test locally using the Code Runner extension.
 4. When you feel your solution is ready, open a command prompt in the folder of your current challenge. Then, enter the command **node test**.
 5. In the VS Code Terminal, you will receive feeback that lets you know if you passed the test or not. If you do not pass, it will also give you hints as to what you need to fix. You may submit a test any number of times.
