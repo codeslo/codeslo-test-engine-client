@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "app-root-path": "^2.1.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "callsite": "^1.0.0",
     "chalk": "^2.4.2",
     "glob": "^7.1.3",
